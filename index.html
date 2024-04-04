@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="container">
+        <header id="heading">
+            <span class="material-symbols-outlined">alarm</span>
+            <h1>Alarm Clock</h1>
+            <span class="material-symbols-outlined">alarm</span>
+        </header>
+        <main>
+            <div id="time">
+                <h2 id="time-hours">hours</h2>
+                <h2 id="time-mins">minutes</h2>
+                <h2 id="time-secs">seconds</h2>
+                <h2 id="time-period">am/pm</h2>
+            </div>
+            <div id="setAlarm">
+                <input id="hr" type="number" placeholder="Hr">
+                <input id="min" type="number" placeholder="Min">
+                <select id="mySelect">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                <button onclick="setAlarm()">Set Alarm</button>
+            </div>
+            <audio id="alarmSound" src="./alarm.mp3"></audio>
+            <h3>List of Alarms</h3>
+            <div id="alarmList">
+                
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
